@@ -1,13 +1,14 @@
 /*
 Theme Name: Responsive Child
 Template: responsive
-Author: Gerard Greenidge
-Author URI: http://www.edunow.com
+Customized by: Gerard Greenidge
+Customizer URI: http://www.edunow.com
 Description: Responsive Child Theme is based on the Responsive Theme, a flexible foundation with fluid grid system that adapts your website to mobile devices and the desktop or any other viewing environment. Theme features 9 Page Templates, 11 Widget Areas, 6 Template Layouts, 4 Menu Positions and more. Powerful but simple Theme Options for full CMS control with easy Logo Upload and Social Networking. Responsive is WooCommerce Compatible, Multilingual Ready (WPML), RTL-Language Support, Retina-Ready, Search Engine Friendly, W3C Markup Validated and currently translated into over 45 languages. Cross-Browser compatible. Official support forum (http://cyberchimps.com/forum/free/responsive/)
 Tags: white,black,gray,light,custom-menu,custom-header,custom-background,one-column,two-columns,left-sidebar,right-sidebar,theme-options,threaded-comments,full-width-template,sticky-post,translation-ready,rtl-language-support,responsive-layout,fluid-layout,featured-images
 Version: 1.9.8.2.1463844164
 Updated: 2016-05-21 15:22:44
 
+BETA.CHCONLINE.ORG/ROCKTOBERFEST/
 
 */
 
@@ -185,7 +186,7 @@ p.over21please {
     clear: both;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#585858, endColorstr=#FBAF19)";
     margin: 0 auto;
-    width:1000px;
+    width:1120px;
 }
 .menu a {
     border-left: 0;
@@ -197,7 +198,8 @@ p.over21please {
     height: 45px;
     line-height: 45px;
     margin: 0;
-    padding: 0.3em 0.7em 0.5em 0.7em;
+    /*padding: 0.3em 0.7em 0.5em 0.7em;*/
+    padding: 0.3em 0.5em 0.5em 0.5em;
     position: relative;
     text-decoration: none;
     text-shadow: none;
@@ -226,6 +228,17 @@ p.over21please {
     max-width: 1120px;
 }
 
+.testimonial {
+    background: #fff url(/rocktoberfest/wp-content/uploads/testimonial-quote-line-gold.png) no-repeat top center;
+    border: 0;
+    padding: 50px 50px 10px 50px;
+    font-size:1.15em;
+    line-height: 1.3em;
+    font-style: italic;
+    min-height: 70px;
+    margin: 15px 0 15px 0;
+}
+
 #footer {
     font-size: 14px;
     line-height: 1.5em;
@@ -247,7 +260,6 @@ p.over21please {
 }
 .footer_right {
     text-align: left;
-    margin-top: 50px;
 }
 
 /* Headings */
@@ -446,7 +458,7 @@ div#home_widget_1 {
     min-height: 464px;
 }
 .go-photo1 {
-    background: url(/rocktoberfest/wp-content/uploads/0175-Rocktoberfest-go.png) no-repeat left;
+    background: url(/rocktoberfest/wp-content/uploads/go1-090716.jpg) no-repeat left;
     min-height: 667px;
 }
 
@@ -504,6 +516,7 @@ div#home_widget_1 {
     font-size: 1.5em;
     font-weight: 700;
 }
+
 
 /*** Mobile ***/
 
@@ -579,11 +592,24 @@ div#home_widget_1 {
 
 }
 
+@media screen and (max-width: 960px) {
+table#fundaneed {
+    text-align: center;
+    width: 100% !important;
+}
+#fundaneed th, #fundaneed td {
+    padding: .8em;
+    clear: both !important;
+    float: left !important;
+    width: 92% !important;
+    border: 0;
+}
+}
+
 @media screen and (max-width: 768px) {
 .col50 {
     width: 100%;
 }
-
 #logo {
     display:none;
 }
@@ -639,7 +665,7 @@ background: url(/rocktoberfest/wp-content/uploads/no_circle_home3.jpg) no-repeat
 width: 100%;
 }
 .go-photo1 {
-background: url(/rocktoberfest/wp-content/uploads/no-circle_go-photo-1.jpg) no-repeat center;
+background: url(/rocktoberfest/wp-content/uploads/0175-Rocktoberfest-go.png) no-repeat center;
 width: 100%;
 }
 .go-photo4 {
